@@ -1,0 +1,4 @@
+/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/image-screen.dir
+/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/hello-sdl.dir

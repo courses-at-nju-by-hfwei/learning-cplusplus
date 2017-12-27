@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++1y -Wall -g   CMakeFiles/hello-sdl.dir/cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.o  -o hello-sdl -L/usr/lib/x86_64-linux-gnu  -lSDL2 
