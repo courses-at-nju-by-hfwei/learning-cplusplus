@@ -111,6 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named matching-0543
+
+# Build rule for target.
+matching-0543: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matching-0543
+.PHONY : matching-0543
+
+# fast build rule for target.
+matching-0543/fast:
+	$(MAKE) -f CMakeFiles/matching-0543.dir/build.make CMakeFiles/matching-0543.dir/build
+.PHONY : matching-0543/fast
+
+#=============================================================================
+# Target rules for targets named brackets-matching
+
+# Build rule for target.
+brackets-matching: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 brackets-matching
+.PHONY : brackets-matching
+
+# fast build rule for target.
+brackets-matching/fast:
+	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/build
+.PHONY : brackets-matching/fast
+
+#=============================================================================
+# Target rules for targets named linkedlist
+
+# Build rule for target.
+linkedlist: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 linkedlist
+.PHONY : linkedlist
+
+# fast build rule for target.
+linkedlist/fast:
+	$(MAKE) -f CMakeFiles/linkedlist.dir/build.make CMakeFiles/linkedlist.dir/build
+.PHONY : linkedlist/fast
+
+#=============================================================================
+# Target rules for targets named key-presses
+
+# Build rule for target.
+key-presses: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 key-presses
+.PHONY : key-presses
+
+# fast build rule for target.
+key-presses/fast:
+	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/build
+.PHONY : key-presses/fast
+
+#=============================================================================
+# Target rules for targets named event-driven
+
+# Build rule for target.
+event-driven: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 event-driven
+.PHONY : event-driven
+
+# fast build rule for target.
+event-driven/fast:
+	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/build
+.PHONY : event-driven/fast
+
+#=============================================================================
 # Target rules for targets named image-screen
 
 # Build rule for target.
@@ -122,6 +187,19 @@ image-screen: cmake_check_build_system
 image-screen/fast:
 	$(MAKE) -f CMakeFiles/image-screen.dir/build.make CMakeFiles/image-screen.dir/build
 .PHONY : image-screen/fast
+
+#=============================================================================
+# Target rules for targets named dynamic-array
+
+# Build rule for target.
+dynamic-array: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic-array
+.PHONY : dynamic-array
+
+# fast build rule for target.
+dynamic-array/fast:
+	$(MAKE) -f CMakeFiles/dynamic-array.dir/build.make CMakeFiles/dynamic-array.dir/build
+.PHONY : dynamic-array/fast
 
 #=============================================================================
 # Target rules for targets named hello-sdl
@@ -190,15 +268,183 @@ cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.s:
 	$(MAKE) -f CMakeFiles/image-screen.dir/build.make CMakeFiles/image-screen.dir/cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.s
 .PHONY : cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.s
 
+cplusplus-sdl/lazy-foo-tutorial/03-event-driven.o: cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.o
+
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.o
+
+# target to build an object file
+cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.o:
+	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.o
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.o
+
+cplusplus-sdl/lazy-foo-tutorial/03-event-driven.i: cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.i
+
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.i
+
+# target to preprocess a source file
+cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.i:
+	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.i
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.i
+
+cplusplus-sdl/lazy-foo-tutorial/03-event-driven.s: cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.s
+
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.s
+
+# target to generate assembly for a file
+cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.s:
+	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.s
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.s
+
+cplusplus-sdl/lazy-foo-tutorial/04-key-presses.o: cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.o
+
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.o
+
+# target to build an object file
+cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.o:
+	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.o
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.o
+
+cplusplus-sdl/lazy-foo-tutorial/04-key-presses.i: cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.i
+
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.i
+
+# target to preprocess a source file
+cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.i:
+	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.i
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.i
+
+cplusplus-sdl/lazy-foo-tutorial/04-key-presses.s: cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.s
+
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.s
+
+# target to generate assembly for a file
+cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.s:
+	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.s
+.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.s
+
+cplusplus-test/dynamic-array.o: cplusplus-test/dynamic-array.cpp.o
+
+.PHONY : cplusplus-test/dynamic-array.o
+
+# target to build an object file
+cplusplus-test/dynamic-array.cpp.o:
+	$(MAKE) -f CMakeFiles/dynamic-array.dir/build.make CMakeFiles/dynamic-array.dir/cplusplus-test/dynamic-array.cpp.o
+.PHONY : cplusplus-test/dynamic-array.cpp.o
+
+cplusplus-test/dynamic-array.i: cplusplus-test/dynamic-array.cpp.i
+
+.PHONY : cplusplus-test/dynamic-array.i
+
+# target to preprocess a source file
+cplusplus-test/dynamic-array.cpp.i:
+	$(MAKE) -f CMakeFiles/dynamic-array.dir/build.make CMakeFiles/dynamic-array.dir/cplusplus-test/dynamic-array.cpp.i
+.PHONY : cplusplus-test/dynamic-array.cpp.i
+
+cplusplus-test/dynamic-array.s: cplusplus-test/dynamic-array.cpp.s
+
+.PHONY : cplusplus-test/dynamic-array.s
+
+# target to generate assembly for a file
+cplusplus-test/dynamic-array.cpp.s:
+	$(MAKE) -f CMakeFiles/dynamic-array.dir/build.make CMakeFiles/dynamic-array.dir/cplusplus-test/dynamic-array.cpp.s
+.PHONY : cplusplus-test/dynamic-array.cpp.s
+
+debugging/from-students/linkedlist.o: debugging/from-students/linkedlist.cpp.o
+
+.PHONY : debugging/from-students/linkedlist.o
+
+# target to build an object file
+debugging/from-students/linkedlist.cpp.o:
+	$(MAKE) -f CMakeFiles/linkedlist.dir/build.make CMakeFiles/linkedlist.dir/debugging/from-students/linkedlist.cpp.o
+.PHONY : debugging/from-students/linkedlist.cpp.o
+
+debugging/from-students/linkedlist.i: debugging/from-students/linkedlist.cpp.i
+
+.PHONY : debugging/from-students/linkedlist.i
+
+# target to preprocess a source file
+debugging/from-students/linkedlist.cpp.i:
+	$(MAKE) -f CMakeFiles/linkedlist.dir/build.make CMakeFiles/linkedlist.dir/debugging/from-students/linkedlist.cpp.i
+.PHONY : debugging/from-students/linkedlist.cpp.i
+
+debugging/from-students/linkedlist.s: debugging/from-students/linkedlist.cpp.s
+
+.PHONY : debugging/from-students/linkedlist.s
+
+# target to generate assembly for a file
+debugging/from-students/linkedlist.cpp.s:
+	$(MAKE) -f CMakeFiles/linkedlist.dir/build.make CMakeFiles/linkedlist.dir/debugging/from-students/linkedlist.cpp.s
+.PHONY : debugging/from-students/linkedlist.cpp.s
+
+debugging/from-students/matching-0543.o: debugging/from-students/matching-0543.cpp.o
+
+.PHONY : debugging/from-students/matching-0543.o
+
+# target to build an object file
+debugging/from-students/matching-0543.cpp.o:
+	$(MAKE) -f CMakeFiles/matching-0543.dir/build.make CMakeFiles/matching-0543.dir/debugging/from-students/matching-0543.cpp.o
+.PHONY : debugging/from-students/matching-0543.cpp.o
+
+debugging/from-students/matching-0543.i: debugging/from-students/matching-0543.cpp.i
+
+.PHONY : debugging/from-students/matching-0543.i
+
+# target to preprocess a source file
+debugging/from-students/matching-0543.cpp.i:
+	$(MAKE) -f CMakeFiles/matching-0543.dir/build.make CMakeFiles/matching-0543.dir/debugging/from-students/matching-0543.cpp.i
+.PHONY : debugging/from-students/matching-0543.cpp.i
+
+debugging/from-students/matching-0543.s: debugging/from-students/matching-0543.cpp.s
+
+.PHONY : debugging/from-students/matching-0543.s
+
+# target to generate assembly for a file
+debugging/from-students/matching-0543.cpp.s:
+	$(MAKE) -f CMakeFiles/matching-0543.dir/build.make CMakeFiles/matching-0543.dir/debugging/from-students/matching-0543.cpp.s
+.PHONY : debugging/from-students/matching-0543.cpp.s
+
+nju-oj/exams/brackets-matching.o: nju-oj/exams/brackets-matching.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching.cpp.o:
+	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching.cpp.o
+.PHONY : nju-oj/exams/brackets-matching.cpp.o
+
+nju-oj/exams/brackets-matching.i: nju-oj/exams/brackets-matching.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching.cpp.i:
+	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching.cpp.i
+.PHONY : nju-oj/exams/brackets-matching.cpp.i
+
+nju-oj/exams/brackets-matching.s: nju-oj/exams/brackets-matching.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching.cpp.s:
+	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching.cpp.s
+.PHONY : nju-oj/exams/brackets-matching.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... matching-0543"
 	@echo "... edit_cache"
+	@echo "... brackets-matching"
+	@echo "... linkedlist"
+	@echo "... key-presses"
+	@echo "... event-driven"
 	@echo "... image-screen"
 	@echo "... rebuild_cache"
+	@echo "... dynamic-array"
 	@echo "... hello-sdl"
 	@echo "... cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.o"
 	@echo "... cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.i"
@@ -206,6 +452,24 @@ help:
 	@echo "... cplusplus-sdl/lazy-foo-tutorial/02-image-screen.o"
 	@echo "... cplusplus-sdl/lazy-foo-tutorial/02-image-screen.i"
 	@echo "... cplusplus-sdl/lazy-foo-tutorial/02-image-screen.s"
+	@echo "... cplusplus-sdl/lazy-foo-tutorial/03-event-driven.o"
+	@echo "... cplusplus-sdl/lazy-foo-tutorial/03-event-driven.i"
+	@echo "... cplusplus-sdl/lazy-foo-tutorial/03-event-driven.s"
+	@echo "... cplusplus-sdl/lazy-foo-tutorial/04-key-presses.o"
+	@echo "... cplusplus-sdl/lazy-foo-tutorial/04-key-presses.i"
+	@echo "... cplusplus-sdl/lazy-foo-tutorial/04-key-presses.s"
+	@echo "... cplusplus-test/dynamic-array.o"
+	@echo "... cplusplus-test/dynamic-array.i"
+	@echo "... cplusplus-test/dynamic-array.s"
+	@echo "... debugging/from-students/linkedlist.o"
+	@echo "... debugging/from-students/linkedlist.i"
+	@echo "... debugging/from-students/linkedlist.s"
+	@echo "... debugging/from-students/matching-0543.o"
+	@echo "... debugging/from-students/matching-0543.i"
+	@echo "... debugging/from-students/matching-0543.s"
+	@echo "... nju-oj/exams/brackets-matching.o"
+	@echo "... nju-oj/exams/brackets-matching.i"
+	@echo "... nju-oj/exams/brackets-matching.s"
 .PHONY : help
 
 

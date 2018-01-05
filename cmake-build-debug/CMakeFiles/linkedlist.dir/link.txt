@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++1y -Wall -g   CMakeFiles/linkedlist.dir/debugging/from-students/linkedlist.cpp.o  -o linkedlist 

@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++1y -Wall -g   CMakeFiles/dynamic-array.dir/cplusplus-test/dynamic-array.cpp.o  -o dynamic-array 

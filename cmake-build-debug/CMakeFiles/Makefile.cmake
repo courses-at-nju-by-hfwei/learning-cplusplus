@@ -46,6 +46,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/matching-0543.dir/DependInfo.cmake"
+  "CMakeFiles/brackets-matching.dir/DependInfo.cmake"
+  "CMakeFiles/linkedlist.dir/DependInfo.cmake"
+  "CMakeFiles/key-presses.dir/DependInfo.cmake"
+  "CMakeFiles/event-driven.dir/DependInfo.cmake"
   "CMakeFiles/image-screen.dir/DependInfo.cmake"
+  "CMakeFiles/dynamic-array.dir/DependInfo.cmake"
   "CMakeFiles/hello-sdl.dir/DependInfo.cmake"
   )

@@ -1,4 +1,10 @@
+/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/matching-0543.dir
 /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/brackets-matching.dir
+/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/linkedlist.dir
+/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/key-presses.dir
+/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/event-driven.dir
 /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/image-screen.dir
 /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/dynamic-array.dir
 /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles/hello-sdl.dir
