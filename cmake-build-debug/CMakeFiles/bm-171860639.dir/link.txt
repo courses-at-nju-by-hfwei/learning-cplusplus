@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++1y -Wall -g   CMakeFiles/bm-171860639.dir/nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.o  -o bm-171860639 

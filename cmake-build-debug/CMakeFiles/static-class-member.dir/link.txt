@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++1y -Wall -g   CMakeFiles/static-class-member.dir/the-cplusplus-pl/concrete-classes/static-class-member.cpp.o  -o static-class-member 

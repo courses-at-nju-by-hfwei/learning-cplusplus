@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hengxin/github-projects/learning-cplusplus/the-cplusplus-pl/class-lifecycle/constructor.cpp
+string
+-
+iostream
+-
+vector
+-
+

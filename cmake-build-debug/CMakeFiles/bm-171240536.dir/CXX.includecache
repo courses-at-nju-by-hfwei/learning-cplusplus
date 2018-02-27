@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hengxin/github-projects/learning-cplusplus/nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp
+iostream
+-
+

@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.6/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.3870.21/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.6/bin/cmake/bin/cmake -E remove -f
+RM = /home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.3870.21/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -56,27 +56,27 @@ CMAKE_BINARY_DIR = /home/hengxin/github-projects/learning-cplusplus/cmake-build-
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.6/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.6/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.3870.21/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.3870.21/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named josephus
+
+# Build rule for target.
+josephus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 josephus
+.PHONY : josephus
+
+# fast build rule for target.
+josephus/fast:
+	$(MAKE) -f CMakeFiles/josephus.dir/build.make CMakeFiles/josephus.dir/build
+.PHONY : josephus/fast
+
+#=============================================================================
 # Target rules for targets named matching-0543
 
 # Build rule for target.
@@ -137,6 +150,58 @@ brackets-matching/fast:
 .PHONY : brackets-matching/fast
 
 #=============================================================================
+# Target rules for targets named static-class-member
+
+# Build rule for target.
+static-class-member: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 static-class-member
+.PHONY : static-class-member
+
+# fast build rule for target.
+static-class-member/fast:
+	$(MAKE) -f CMakeFiles/static-class-member.dir/build.make CMakeFiles/static-class-member.dir/build
+.PHONY : static-class-member/fast
+
+#=============================================================================
+# Target rules for targets named brackets-matching-tutorial
+
+# Build rule for target.
+brackets-matching-tutorial: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 brackets-matching-tutorial
+.PHONY : brackets-matching-tutorial
+
+# fast build rule for target.
+brackets-matching-tutorial/fast:
+	$(MAKE) -f CMakeFiles/brackets-matching-tutorial.dir/build.make CMakeFiles/brackets-matching-tutorial.dir/build
+.PHONY : brackets-matching-tutorial/fast
+
+#=============================================================================
+# Target rules for targets named josephus-tutorial
+
+# Build rule for target.
+josephus-tutorial: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 josephus-tutorial
+.PHONY : josephus-tutorial
+
+# fast build rule for target.
+josephus-tutorial/fast:
+	$(MAKE) -f CMakeFiles/josephus-tutorial.dir/build.make CMakeFiles/josephus-tutorial.dir/build
+.PHONY : josephus-tutorial/fast
+
+#=============================================================================
+# Target rules for targets named bm-171180589
+
+# Build rule for target.
+bm-171180589: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-171180589
+.PHONY : bm-171180589
+
+# fast build rule for target.
+bm-171180589/fast:
+	$(MAKE) -f CMakeFiles/bm-171180589.dir/build.make CMakeFiles/bm-171180589.dir/build
+.PHONY : bm-171180589/fast
+
+#=============================================================================
 # Target rules for targets named linkedlist
 
 # Build rule for target.
@@ -150,43 +215,56 @@ linkedlist/fast:
 .PHONY : linkedlist/fast
 
 #=============================================================================
-# Target rules for targets named key-presses
+# Target rules for targets named constructor
 
 # Build rule for target.
-key-presses: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 key-presses
-.PHONY : key-presses
+constructor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 constructor
+.PHONY : constructor
 
 # fast build rule for target.
-key-presses/fast:
-	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/build
-.PHONY : key-presses/fast
+constructor/fast:
+	$(MAKE) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/build
+.PHONY : constructor/fast
 
 #=============================================================================
-# Target rules for targets named event-driven
+# Target rules for targets named bm-171860599
 
 # Build rule for target.
-event-driven: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 event-driven
-.PHONY : event-driven
+bm-171860599: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-171860599
+.PHONY : bm-171860599
 
 # fast build rule for target.
-event-driven/fast:
-	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/build
-.PHONY : event-driven/fast
+bm-171860599/fast:
+	$(MAKE) -f CMakeFiles/bm-171860599.dir/build.make CMakeFiles/bm-171860599.dir/build
+.PHONY : bm-171860599/fast
 
 #=============================================================================
-# Target rules for targets named image-screen
+# Target rules for targets named for-statements
 
 # Build rule for target.
-image-screen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 image-screen
-.PHONY : image-screen
+for-statements: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 for-statements
+.PHONY : for-statements
 
 # fast build rule for target.
-image-screen/fast:
-	$(MAKE) -f CMakeFiles/image-screen.dir/build.make CMakeFiles/image-screen.dir/build
-.PHONY : image-screen/fast
+for-statements/fast:
+	$(MAKE) -f CMakeFiles/for-statements.dir/build.make CMakeFiles/for-statements.dir/build
+.PHONY : for-statements/fast
+
+#=============================================================================
+# Target rules for targets named bm-171250630
+
+# Build rule for target.
+bm-171250630: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-171250630
+.PHONY : bm-171250630
+
+# fast build rule for target.
+bm-171250630/fast:
+	$(MAKE) -f CMakeFiles/bm-171250630.dir/build.make CMakeFiles/bm-171250630.dir/build
+.PHONY : bm-171250630/fast
 
 #=============================================================================
 # Target rules for targets named dynamic-array
@@ -202,125 +280,121 @@ dynamic-array/fast:
 .PHONY : dynamic-array/fast
 
 #=============================================================================
-# Target rules for targets named hello-sdl
+# Target rules for targets named if-declaration
 
 # Build rule for target.
-hello-sdl: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello-sdl
-.PHONY : hello-sdl
+if-declaration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 if-declaration
+.PHONY : if-declaration
 
 # fast build rule for target.
-hello-sdl/fast:
-	$(MAKE) -f CMakeFiles/hello-sdl.dir/build.make CMakeFiles/hello-sdl.dir/build
-.PHONY : hello-sdl/fast
+if-declaration/fast:
+	$(MAKE) -f CMakeFiles/if-declaration.dir/build.make CMakeFiles/if-declaration.dir/build
+.PHONY : if-declaration/fast
 
-cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.o: cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.o
+#=============================================================================
+# Target rules for targets named bm-171240542
 
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.o
+# Build rule for target.
+bm-171240542: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-171240542
+.PHONY : bm-171240542
 
-# target to build an object file
-cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.o:
-	$(MAKE) -f CMakeFiles/hello-sdl.dir/build.make CMakeFiles/hello-sdl.dir/cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.o
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.o
+# fast build rule for target.
+bm-171240542/fast:
+	$(MAKE) -f CMakeFiles/bm-171240542.dir/build.make CMakeFiles/bm-171240542.dir/build
+.PHONY : bm-171240542/fast
 
-cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.i: cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.i
+#=============================================================================
+# Target rules for targets named bm-171240011
 
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.i
+# Build rule for target.
+bm-171240011: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-171240011
+.PHONY : bm-171240011
 
-# target to preprocess a source file
-cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.i:
-	$(MAKE) -f CMakeFiles/hello-sdl.dir/build.make CMakeFiles/hello-sdl.dir/cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.i
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.i
+# fast build rule for target.
+bm-171240011/fast:
+	$(MAKE) -f CMakeFiles/bm-171240011.dir/build.make CMakeFiles/bm-171240011.dir/build
+.PHONY : bm-171240011/fast
 
-cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.s: cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.s
+#=============================================================================
+# Target rules for targets named bm-171860575
 
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.s
+# Build rule for target.
+bm-171860575: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-171860575
+.PHONY : bm-171860575
 
-# target to generate assembly for a file
-cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.s:
-	$(MAKE) -f CMakeFiles/hello-sdl.dir/build.make CMakeFiles/hello-sdl.dir/cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.s
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.cpp.s
+# fast build rule for target.
+bm-171860575/fast:
+	$(MAKE) -f CMakeFiles/bm-171860575.dir/build.make CMakeFiles/bm-171860575.dir/build
+.PHONY : bm-171860575/fast
 
-cplusplus-sdl/lazy-foo-tutorial/02-image-screen.o: cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.o
+#=============================================================================
+# Target rules for targets named bm-171860639
 
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/02-image-screen.o
+# Build rule for target.
+bm-171860639: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-171860639
+.PHONY : bm-171860639
 
-# target to build an object file
-cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.o:
-	$(MAKE) -f CMakeFiles/image-screen.dir/build.make CMakeFiles/image-screen.dir/cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.o
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.o
+# fast build rule for target.
+bm-171860639/fast:
+	$(MAKE) -f CMakeFiles/bm-171860639.dir/build.make CMakeFiles/bm-171860639.dir/build
+.PHONY : bm-171860639/fast
 
-cplusplus-sdl/lazy-foo-tutorial/02-image-screen.i: cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.i
+#=============================================================================
+# Target rules for targets named bm-171240536
 
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/02-image-screen.i
+# Build rule for target.
+bm-171240536: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-171240536
+.PHONY : bm-171240536
 
-# target to preprocess a source file
-cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.i:
-	$(MAKE) -f CMakeFiles/image-screen.dir/build.make CMakeFiles/image-screen.dir/cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.i
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.i
+# fast build rule for target.
+bm-171240536/fast:
+	$(MAKE) -f CMakeFiles/bm-171240536.dir/build.make CMakeFiles/bm-171240536.dir/build
+.PHONY : bm-171240536/fast
 
-cplusplus-sdl/lazy-foo-tutorial/02-image-screen.s: cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.s
+#=============================================================================
+# Target rules for targets named bm-171240513
 
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/02-image-screen.s
+# Build rule for target.
+bm-171240513: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-171240513
+.PHONY : bm-171240513
 
-# target to generate assembly for a file
-cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.s:
-	$(MAKE) -f CMakeFiles/image-screen.dir/build.make CMakeFiles/image-screen.dir/cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.s
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/02-image-screen.cpp.s
+# fast build rule for target.
+bm-171240513/fast:
+	$(MAKE) -f CMakeFiles/bm-171240513.dir/build.make CMakeFiles/bm-171240513.dir/build
+.PHONY : bm-171240513/fast
 
-cplusplus-sdl/lazy-foo-tutorial/03-event-driven.o: cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.o
+#=============================================================================
+# Target rules for targets named bm-171240543
 
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.o
+# Build rule for target.
+bm-171240543: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-171240543
+.PHONY : bm-171240543
 
-# target to build an object file
-cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.o:
-	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.o
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.o
+# fast build rule for target.
+bm-171240543/fast:
+	$(MAKE) -f CMakeFiles/bm-171240543.dir/build.make CMakeFiles/bm-171240543.dir/build
+.PHONY : bm-171240543/fast
 
-cplusplus-sdl/lazy-foo-tutorial/03-event-driven.i: cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.i
+#=============================================================================
+# Target rules for targets named bm-161180204
 
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.i
+# Build rule for target.
+bm-161180204: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bm-161180204
+.PHONY : bm-161180204
 
-# target to preprocess a source file
-cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.i:
-	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.i
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.i
-
-cplusplus-sdl/lazy-foo-tutorial/03-event-driven.s: cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.s
-
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.s
-
-# target to generate assembly for a file
-cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.s:
-	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.s
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/03-event-driven.cpp.s
-
-cplusplus-sdl/lazy-foo-tutorial/04-key-presses.o: cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.o
-
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.o
-
-# target to build an object file
-cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.o:
-	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.o
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.o
-
-cplusplus-sdl/lazy-foo-tutorial/04-key-presses.i: cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.i
-
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.i
-
-# target to preprocess a source file
-cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.i:
-	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.i
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.i
-
-cplusplus-sdl/lazy-foo-tutorial/04-key-presses.s: cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.s
-
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.s
-
-# target to generate assembly for a file
-cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.s:
-	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.s
-.PHONY : cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.s
+# fast build rule for target.
+bm-161180204/fast:
+	$(MAKE) -f CMakeFiles/bm-161180204.dir/build.make CMakeFiles/bm-161180204.dir/build
+.PHONY : bm-161180204/fast
 
 cplusplus-test/dynamic-array.o: cplusplus-test/dynamic-array.cpp.o
 
@@ -403,32 +477,518 @@ debugging/from-students/matching-0543.cpp.s:
 	$(MAKE) -f CMakeFiles/matching-0543.dir/build.make CMakeFiles/matching-0543.dir/debugging/from-students/matching-0543.cpp.s
 .PHONY : debugging/from-students/matching-0543.cpp.s
 
-nju-oj/exams/brackets-matching.o: nju-oj/exams/brackets-matching.cpp.o
+nju-oj/exams/brackets-matching/from-students/bm-161180204.o: nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.o
 
-.PHONY : nju-oj/exams/brackets-matching.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-161180204.o
 
 # target to build an object file
-nju-oj/exams/brackets-matching.cpp.o:
-	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching.cpp.o
-.PHONY : nju-oj/exams/brackets-matching.cpp.o
+nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.o:
+	$(MAKE) -f CMakeFiles/bm-161180204.dir/build.make CMakeFiles/bm-161180204.dir/nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.o
 
-nju-oj/exams/brackets-matching.i: nju-oj/exams/brackets-matching.cpp.i
+nju-oj/exams/brackets-matching/from-students/bm-161180204.i: nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.i
 
-.PHONY : nju-oj/exams/brackets-matching.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-161180204.i
 
 # target to preprocess a source file
-nju-oj/exams/brackets-matching.cpp.i:
-	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching.cpp.i
-.PHONY : nju-oj/exams/brackets-matching.cpp.i
+nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.i:
+	$(MAKE) -f CMakeFiles/bm-161180204.dir/build.make CMakeFiles/bm-161180204.dir/nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.i
 
-nju-oj/exams/brackets-matching.s: nju-oj/exams/brackets-matching.cpp.s
+nju-oj/exams/brackets-matching/from-students/bm-161180204.s: nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.s
 
-.PHONY : nju-oj/exams/brackets-matching.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-161180204.s
 
 # target to generate assembly for a file
-nju-oj/exams/brackets-matching.cpp.s:
-	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching.cpp.s
-.PHONY : nju-oj/exams/brackets-matching.cpp.s
+nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.s:
+	$(MAKE) -f CMakeFiles/bm-161180204.dir/build.make CMakeFiles/bm-161180204.dir/nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-161180204.cpp.s
+
+nju-oj/exams/brackets-matching/from-students/bm-171180589.o: nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171180589.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.o:
+	$(MAKE) -f CMakeFiles/bm-171180589.dir/build.make CMakeFiles/bm-171180589.dir/nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.o
+
+nju-oj/exams/brackets-matching/from-students/bm-171180589.i: nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171180589.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.i:
+	$(MAKE) -f CMakeFiles/bm-171180589.dir/build.make CMakeFiles/bm-171180589.dir/nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.i
+
+nju-oj/exams/brackets-matching/from-students/bm-171180589.s: nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171180589.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.s:
+	$(MAKE) -f CMakeFiles/bm-171180589.dir/build.make CMakeFiles/bm-171180589.dir/nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171180589.cpp.s
+
+nju-oj/exams/brackets-matching/from-students/bm-171240011.o: nju-oj/exams/brackets-matching/from-students/bm-171240011.c.o
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240011.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/from-students/bm-171240011.c.o:
+	$(MAKE) -f CMakeFiles/bm-171240011.dir/build.make CMakeFiles/bm-171240011.dir/nju-oj/exams/brackets-matching/from-students/bm-171240011.c.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240011.c.o
+
+nju-oj/exams/brackets-matching/from-students/bm-171240011.i: nju-oj/exams/brackets-matching/from-students/bm-171240011.c.i
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240011.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/from-students/bm-171240011.c.i:
+	$(MAKE) -f CMakeFiles/bm-171240011.dir/build.make CMakeFiles/bm-171240011.dir/nju-oj/exams/brackets-matching/from-students/bm-171240011.c.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240011.c.i
+
+nju-oj/exams/brackets-matching/from-students/bm-171240011.s: nju-oj/exams/brackets-matching/from-students/bm-171240011.c.s
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240011.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/from-students/bm-171240011.c.s:
+	$(MAKE) -f CMakeFiles/bm-171240011.dir/build.make CMakeFiles/bm-171240011.dir/nju-oj/exams/brackets-matching/from-students/bm-171240011.c.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240011.c.s
+
+nju-oj/exams/brackets-matching/from-students/bm-171240513.o: nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240513.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.o:
+	$(MAKE) -f CMakeFiles/bm-171240513.dir/build.make CMakeFiles/bm-171240513.dir/nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.o
+
+nju-oj/exams/brackets-matching/from-students/bm-171240513.i: nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240513.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.i:
+	$(MAKE) -f CMakeFiles/bm-171240513.dir/build.make CMakeFiles/bm-171240513.dir/nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.i
+
+nju-oj/exams/brackets-matching/from-students/bm-171240513.s: nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240513.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.s:
+	$(MAKE) -f CMakeFiles/bm-171240513.dir/build.make CMakeFiles/bm-171240513.dir/nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240513.cpp.s
+
+nju-oj/exams/brackets-matching/from-students/bm-171240536.o: nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240536.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.o:
+	$(MAKE) -f CMakeFiles/bm-171240536.dir/build.make CMakeFiles/bm-171240536.dir/nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.o
+
+nju-oj/exams/brackets-matching/from-students/bm-171240536.i: nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240536.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.i:
+	$(MAKE) -f CMakeFiles/bm-171240536.dir/build.make CMakeFiles/bm-171240536.dir/nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.i
+
+nju-oj/exams/brackets-matching/from-students/bm-171240536.s: nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240536.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.s:
+	$(MAKE) -f CMakeFiles/bm-171240536.dir/build.make CMakeFiles/bm-171240536.dir/nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240536.cpp.s
+
+nju-oj/exams/brackets-matching/from-students/bm-171240542.o: nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240542.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.o:
+	$(MAKE) -f CMakeFiles/bm-171240542.dir/build.make CMakeFiles/bm-171240542.dir/nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.o
+
+nju-oj/exams/brackets-matching/from-students/bm-171240542.i: nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240542.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.i:
+	$(MAKE) -f CMakeFiles/bm-171240542.dir/build.make CMakeFiles/bm-171240542.dir/nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.i
+
+nju-oj/exams/brackets-matching/from-students/bm-171240542.s: nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240542.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.s:
+	$(MAKE) -f CMakeFiles/bm-171240542.dir/build.make CMakeFiles/bm-171240542.dir/nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240542.cpp.s
+
+nju-oj/exams/brackets-matching/from-students/bm-171240543.o: nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240543.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.o:
+	$(MAKE) -f CMakeFiles/bm-171240543.dir/build.make CMakeFiles/bm-171240543.dir/nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.o
+
+nju-oj/exams/brackets-matching/from-students/bm-171240543.i: nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240543.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.i:
+	$(MAKE) -f CMakeFiles/bm-171240543.dir/build.make CMakeFiles/bm-171240543.dir/nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.i
+
+nju-oj/exams/brackets-matching/from-students/bm-171240543.s: nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240543.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.s:
+	$(MAKE) -f CMakeFiles/bm-171240543.dir/build.make CMakeFiles/bm-171240543.dir/nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171240543.cpp.s
+
+nju-oj/exams/brackets-matching/from-students/bm-171250630.o: nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171250630.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.o:
+	$(MAKE) -f CMakeFiles/bm-171250630.dir/build.make CMakeFiles/bm-171250630.dir/nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.o
+
+nju-oj/exams/brackets-matching/from-students/bm-171250630.i: nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171250630.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.i:
+	$(MAKE) -f CMakeFiles/bm-171250630.dir/build.make CMakeFiles/bm-171250630.dir/nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.i
+
+nju-oj/exams/brackets-matching/from-students/bm-171250630.s: nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171250630.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.s:
+	$(MAKE) -f CMakeFiles/bm-171250630.dir/build.make CMakeFiles/bm-171250630.dir/nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171250630.cpp.s
+
+nju-oj/exams/brackets-matching/from-students/bm-171860575.o: nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860575.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.o:
+	$(MAKE) -f CMakeFiles/bm-171860575.dir/build.make CMakeFiles/bm-171860575.dir/nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.o
+
+nju-oj/exams/brackets-matching/from-students/bm-171860575.i: nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860575.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.i:
+	$(MAKE) -f CMakeFiles/bm-171860575.dir/build.make CMakeFiles/bm-171860575.dir/nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.i
+
+nju-oj/exams/brackets-matching/from-students/bm-171860575.s: nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860575.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.s:
+	$(MAKE) -f CMakeFiles/bm-171860575.dir/build.make CMakeFiles/bm-171860575.dir/nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860575.cpp.s
+
+nju-oj/exams/brackets-matching/from-students/bm-171860599.o: nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860599.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.o:
+	$(MAKE) -f CMakeFiles/bm-171860599.dir/build.make CMakeFiles/bm-171860599.dir/nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.o
+
+nju-oj/exams/brackets-matching/from-students/bm-171860599.i: nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860599.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.i:
+	$(MAKE) -f CMakeFiles/bm-171860599.dir/build.make CMakeFiles/bm-171860599.dir/nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.i
+
+nju-oj/exams/brackets-matching/from-students/bm-171860599.s: nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860599.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.s:
+	$(MAKE) -f CMakeFiles/bm-171860599.dir/build.make CMakeFiles/bm-171860599.dir/nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860599.cpp.s
+
+nju-oj/exams/brackets-matching/from-students/bm-171860639.o: nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860639.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.o:
+	$(MAKE) -f CMakeFiles/bm-171860639.dir/build.make CMakeFiles/bm-171860639.dir/nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.o
+
+nju-oj/exams/brackets-matching/from-students/bm-171860639.i: nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860639.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.i:
+	$(MAKE) -f CMakeFiles/bm-171860639.dir/build.make CMakeFiles/bm-171860639.dir/nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.i
+
+nju-oj/exams/brackets-matching/from-students/bm-171860639.s: nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860639.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.s:
+	$(MAKE) -f CMakeFiles/bm-171860639.dir/build.make CMakeFiles/bm-171860639.dir/nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/from-students/bm-171860639.cpp.s
+
+nju-oj/exams/brackets-matching/problem/brackets-matching.o: nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.o
+
+.PHONY : nju-oj/exams/brackets-matching/problem/brackets-matching.o
+
+# target to build an object file
+nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.o:
+	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.o
+.PHONY : nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.o
+
+nju-oj/exams/brackets-matching/problem/brackets-matching.i: nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.i
+
+.PHONY : nju-oj/exams/brackets-matching/problem/brackets-matching.i
+
+# target to preprocess a source file
+nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.i:
+	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.i
+.PHONY : nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.i
+
+nju-oj/exams/brackets-matching/problem/brackets-matching.s: nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.s
+
+.PHONY : nju-oj/exams/brackets-matching/problem/brackets-matching.s
+
+# target to generate assembly for a file
+nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.s:
+	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.s
+.PHONY : nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.s
+
+nju-programming-tutorial/brackets-matching-tutorial.o: nju-programming-tutorial/brackets-matching-tutorial.cpp.o
+
+.PHONY : nju-programming-tutorial/brackets-matching-tutorial.o
+
+# target to build an object file
+nju-programming-tutorial/brackets-matching-tutorial.cpp.o:
+	$(MAKE) -f CMakeFiles/brackets-matching-tutorial.dir/build.make CMakeFiles/brackets-matching-tutorial.dir/nju-programming-tutorial/brackets-matching-tutorial.cpp.o
+.PHONY : nju-programming-tutorial/brackets-matching-tutorial.cpp.o
+
+nju-programming-tutorial/brackets-matching-tutorial.i: nju-programming-tutorial/brackets-matching-tutorial.cpp.i
+
+.PHONY : nju-programming-tutorial/brackets-matching-tutorial.i
+
+# target to preprocess a source file
+nju-programming-tutorial/brackets-matching-tutorial.cpp.i:
+	$(MAKE) -f CMakeFiles/brackets-matching-tutorial.dir/build.make CMakeFiles/brackets-matching-tutorial.dir/nju-programming-tutorial/brackets-matching-tutorial.cpp.i
+.PHONY : nju-programming-tutorial/brackets-matching-tutorial.cpp.i
+
+nju-programming-tutorial/brackets-matching-tutorial.s: nju-programming-tutorial/brackets-matching-tutorial.cpp.s
+
+.PHONY : nju-programming-tutorial/brackets-matching-tutorial.s
+
+# target to generate assembly for a file
+nju-programming-tutorial/brackets-matching-tutorial.cpp.s:
+	$(MAKE) -f CMakeFiles/brackets-matching-tutorial.dir/build.make CMakeFiles/brackets-matching-tutorial.dir/nju-programming-tutorial/brackets-matching-tutorial.cpp.s
+.PHONY : nju-programming-tutorial/brackets-matching-tutorial.cpp.s
+
+nju-programming-tutorial/josephus-tutorial.o: nju-programming-tutorial/josephus-tutorial.cpp.o
+
+.PHONY : nju-programming-tutorial/josephus-tutorial.o
+
+# target to build an object file
+nju-programming-tutorial/josephus-tutorial.cpp.o:
+	$(MAKE) -f CMakeFiles/josephus-tutorial.dir/build.make CMakeFiles/josephus-tutorial.dir/nju-programming-tutorial/josephus-tutorial.cpp.o
+.PHONY : nju-programming-tutorial/josephus-tutorial.cpp.o
+
+nju-programming-tutorial/josephus-tutorial.i: nju-programming-tutorial/josephus-tutorial.cpp.i
+
+.PHONY : nju-programming-tutorial/josephus-tutorial.i
+
+# target to preprocess a source file
+nju-programming-tutorial/josephus-tutorial.cpp.i:
+	$(MAKE) -f CMakeFiles/josephus-tutorial.dir/build.make CMakeFiles/josephus-tutorial.dir/nju-programming-tutorial/josephus-tutorial.cpp.i
+.PHONY : nju-programming-tutorial/josephus-tutorial.cpp.i
+
+nju-programming-tutorial/josephus-tutorial.s: nju-programming-tutorial/josephus-tutorial.cpp.s
+
+.PHONY : nju-programming-tutorial/josephus-tutorial.s
+
+# target to generate assembly for a file
+nju-programming-tutorial/josephus-tutorial.cpp.s:
+	$(MAKE) -f CMakeFiles/josephus-tutorial.dir/build.make CMakeFiles/josephus-tutorial.dir/nju-programming-tutorial/josephus-tutorial.cpp.s
+.PHONY : nju-programming-tutorial/josephus-tutorial.cpp.s
+
+nju-programming-tutorial/josephus.o: nju-programming-tutorial/josephus.cpp.o
+
+.PHONY : nju-programming-tutorial/josephus.o
+
+# target to build an object file
+nju-programming-tutorial/josephus.cpp.o:
+	$(MAKE) -f CMakeFiles/josephus.dir/build.make CMakeFiles/josephus.dir/nju-programming-tutorial/josephus.cpp.o
+.PHONY : nju-programming-tutorial/josephus.cpp.o
+
+nju-programming-tutorial/josephus.i: nju-programming-tutorial/josephus.cpp.i
+
+.PHONY : nju-programming-tutorial/josephus.i
+
+# target to preprocess a source file
+nju-programming-tutorial/josephus.cpp.i:
+	$(MAKE) -f CMakeFiles/josephus.dir/build.make CMakeFiles/josephus.dir/nju-programming-tutorial/josephus.cpp.i
+.PHONY : nju-programming-tutorial/josephus.cpp.i
+
+nju-programming-tutorial/josephus.s: nju-programming-tutorial/josephus.cpp.s
+
+.PHONY : nju-programming-tutorial/josephus.s
+
+# target to generate assembly for a file
+nju-programming-tutorial/josephus.cpp.s:
+	$(MAKE) -f CMakeFiles/josephus.dir/build.make CMakeFiles/josephus.dir/nju-programming-tutorial/josephus.cpp.s
+.PHONY : nju-programming-tutorial/josephus.cpp.s
+
+the-cplusplus-pl/class-lifecycle/constructor.o: the-cplusplus-pl/class-lifecycle/constructor.cpp.o
+
+.PHONY : the-cplusplus-pl/class-lifecycle/constructor.o
+
+# target to build an object file
+the-cplusplus-pl/class-lifecycle/constructor.cpp.o:
+	$(MAKE) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/the-cplusplus-pl/class-lifecycle/constructor.cpp.o
+.PHONY : the-cplusplus-pl/class-lifecycle/constructor.cpp.o
+
+the-cplusplus-pl/class-lifecycle/constructor.i: the-cplusplus-pl/class-lifecycle/constructor.cpp.i
+
+.PHONY : the-cplusplus-pl/class-lifecycle/constructor.i
+
+# target to preprocess a source file
+the-cplusplus-pl/class-lifecycle/constructor.cpp.i:
+	$(MAKE) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/the-cplusplus-pl/class-lifecycle/constructor.cpp.i
+.PHONY : the-cplusplus-pl/class-lifecycle/constructor.cpp.i
+
+the-cplusplus-pl/class-lifecycle/constructor.s: the-cplusplus-pl/class-lifecycle/constructor.cpp.s
+
+.PHONY : the-cplusplus-pl/class-lifecycle/constructor.s
+
+# target to generate assembly for a file
+the-cplusplus-pl/class-lifecycle/constructor.cpp.s:
+	$(MAKE) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/the-cplusplus-pl/class-lifecycle/constructor.cpp.s
+.PHONY : the-cplusplus-pl/class-lifecycle/constructor.cpp.s
+
+the-cplusplus-pl/concrete-classes/static-class-member.o: the-cplusplus-pl/concrete-classes/static-class-member.cpp.o
+
+.PHONY : the-cplusplus-pl/concrete-classes/static-class-member.o
+
+# target to build an object file
+the-cplusplus-pl/concrete-classes/static-class-member.cpp.o:
+	$(MAKE) -f CMakeFiles/static-class-member.dir/build.make CMakeFiles/static-class-member.dir/the-cplusplus-pl/concrete-classes/static-class-member.cpp.o
+.PHONY : the-cplusplus-pl/concrete-classes/static-class-member.cpp.o
+
+the-cplusplus-pl/concrete-classes/static-class-member.i: the-cplusplus-pl/concrete-classes/static-class-member.cpp.i
+
+.PHONY : the-cplusplus-pl/concrete-classes/static-class-member.i
+
+# target to preprocess a source file
+the-cplusplus-pl/concrete-classes/static-class-member.cpp.i:
+	$(MAKE) -f CMakeFiles/static-class-member.dir/build.make CMakeFiles/static-class-member.dir/the-cplusplus-pl/concrete-classes/static-class-member.cpp.i
+.PHONY : the-cplusplus-pl/concrete-classes/static-class-member.cpp.i
+
+the-cplusplus-pl/concrete-classes/static-class-member.s: the-cplusplus-pl/concrete-classes/static-class-member.cpp.s
+
+.PHONY : the-cplusplus-pl/concrete-classes/static-class-member.s
+
+# target to generate assembly for a file
+the-cplusplus-pl/concrete-classes/static-class-member.cpp.s:
+	$(MAKE) -f CMakeFiles/static-class-member.dir/build.make CMakeFiles/static-class-member.dir/the-cplusplus-pl/concrete-classes/static-class-member.cpp.s
+.PHONY : the-cplusplus-pl/concrete-classes/static-class-member.cpp.s
+
+the-cplusplus-pl/statements/for-statements.o: the-cplusplus-pl/statements/for-statements.cpp.o
+
+.PHONY : the-cplusplus-pl/statements/for-statements.o
+
+# target to build an object file
+the-cplusplus-pl/statements/for-statements.cpp.o:
+	$(MAKE) -f CMakeFiles/for-statements.dir/build.make CMakeFiles/for-statements.dir/the-cplusplus-pl/statements/for-statements.cpp.o
+.PHONY : the-cplusplus-pl/statements/for-statements.cpp.o
+
+the-cplusplus-pl/statements/for-statements.i: the-cplusplus-pl/statements/for-statements.cpp.i
+
+.PHONY : the-cplusplus-pl/statements/for-statements.i
+
+# target to preprocess a source file
+the-cplusplus-pl/statements/for-statements.cpp.i:
+	$(MAKE) -f CMakeFiles/for-statements.dir/build.make CMakeFiles/for-statements.dir/the-cplusplus-pl/statements/for-statements.cpp.i
+.PHONY : the-cplusplus-pl/statements/for-statements.cpp.i
+
+the-cplusplus-pl/statements/for-statements.s: the-cplusplus-pl/statements/for-statements.cpp.s
+
+.PHONY : the-cplusplus-pl/statements/for-statements.s
+
+# target to generate assembly for a file
+the-cplusplus-pl/statements/for-statements.cpp.s:
+	$(MAKE) -f CMakeFiles/for-statements.dir/build.make CMakeFiles/for-statements.dir/the-cplusplus-pl/statements/for-statements.cpp.s
+.PHONY : the-cplusplus-pl/statements/for-statements.cpp.s
+
+the-cplusplus-pl/statements/if-declaration.o: the-cplusplus-pl/statements/if-declaration.cpp.o
+
+.PHONY : the-cplusplus-pl/statements/if-declaration.o
+
+# target to build an object file
+the-cplusplus-pl/statements/if-declaration.cpp.o:
+	$(MAKE) -f CMakeFiles/if-declaration.dir/build.make CMakeFiles/if-declaration.dir/the-cplusplus-pl/statements/if-declaration.cpp.o
+.PHONY : the-cplusplus-pl/statements/if-declaration.cpp.o
+
+the-cplusplus-pl/statements/if-declaration.i: the-cplusplus-pl/statements/if-declaration.cpp.i
+
+.PHONY : the-cplusplus-pl/statements/if-declaration.i
+
+# target to preprocess a source file
+the-cplusplus-pl/statements/if-declaration.cpp.i:
+	$(MAKE) -f CMakeFiles/if-declaration.dir/build.make CMakeFiles/if-declaration.dir/the-cplusplus-pl/statements/if-declaration.cpp.i
+.PHONY : the-cplusplus-pl/statements/if-declaration.cpp.i
+
+the-cplusplus-pl/statements/if-declaration.s: the-cplusplus-pl/statements/if-declaration.cpp.s
+
+.PHONY : the-cplusplus-pl/statements/if-declaration.s
+
+# target to generate assembly for a file
+the-cplusplus-pl/statements/if-declaration.cpp.s:
+	$(MAKE) -f CMakeFiles/if-declaration.dir/build.make CMakeFiles/if-declaration.dir/the-cplusplus-pl/statements/if-declaration.cpp.s
+.PHONY : the-cplusplus-pl/statements/if-declaration.cpp.s
 
 # Help Target
 help:
@@ -436,28 +996,30 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... matching-0543"
-	@echo "... edit_cache"
-	@echo "... brackets-matching"
-	@echo "... linkedlist"
-	@echo "... key-presses"
-	@echo "... event-driven"
-	@echo "... image-screen"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... josephus"
+	@echo "... matching-0543"
+	@echo "... brackets-matching"
+	@echo "... static-class-member"
+	@echo "... brackets-matching-tutorial"
+	@echo "... josephus-tutorial"
+	@echo "... bm-171180589"
+	@echo "... linkedlist"
+	@echo "... constructor"
+	@echo "... bm-171860599"
+	@echo "... for-statements"
+	@echo "... bm-171250630"
 	@echo "... dynamic-array"
-	@echo "... hello-sdl"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.o"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.i"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/01-hello-sdl.s"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/02-image-screen.o"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/02-image-screen.i"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/02-image-screen.s"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/03-event-driven.o"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/03-event-driven.i"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/03-event-driven.s"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/04-key-presses.o"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/04-key-presses.i"
-	@echo "... cplusplus-sdl/lazy-foo-tutorial/04-key-presses.s"
+	@echo "... if-declaration"
+	@echo "... bm-171240542"
+	@echo "... bm-171240011"
+	@echo "... bm-171860575"
+	@echo "... bm-171860639"
+	@echo "... bm-171240536"
+	@echo "... bm-171240513"
+	@echo "... bm-171240543"
+	@echo "... bm-161180204"
 	@echo "... cplusplus-test/dynamic-array.o"
 	@echo "... cplusplus-test/dynamic-array.i"
 	@echo "... cplusplus-test/dynamic-array.s"
@@ -467,9 +1029,63 @@ help:
 	@echo "... debugging/from-students/matching-0543.o"
 	@echo "... debugging/from-students/matching-0543.i"
 	@echo "... debugging/from-students/matching-0543.s"
-	@echo "... nju-oj/exams/brackets-matching.o"
-	@echo "... nju-oj/exams/brackets-matching.i"
-	@echo "... nju-oj/exams/brackets-matching.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-161180204.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-161180204.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-161180204.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171180589.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171180589.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171180589.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240011.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240011.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240011.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240513.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240513.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240513.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240536.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240536.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240536.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240542.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240542.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240542.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240543.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240543.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171240543.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171250630.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171250630.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171250630.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171860575.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171860575.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171860575.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171860599.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171860599.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171860599.s"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171860639.o"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171860639.i"
+	@echo "... nju-oj/exams/brackets-matching/from-students/bm-171860639.s"
+	@echo "... nju-oj/exams/brackets-matching/problem/brackets-matching.o"
+	@echo "... nju-oj/exams/brackets-matching/problem/brackets-matching.i"
+	@echo "... nju-oj/exams/brackets-matching/problem/brackets-matching.s"
+	@echo "... nju-programming-tutorial/brackets-matching-tutorial.o"
+	@echo "... nju-programming-tutorial/brackets-matching-tutorial.i"
+	@echo "... nju-programming-tutorial/brackets-matching-tutorial.s"
+	@echo "... nju-programming-tutorial/josephus-tutorial.o"
+	@echo "... nju-programming-tutorial/josephus-tutorial.i"
+	@echo "... nju-programming-tutorial/josephus-tutorial.s"
+	@echo "... nju-programming-tutorial/josephus.o"
+	@echo "... nju-programming-tutorial/josephus.i"
+	@echo "... nju-programming-tutorial/josephus.s"
+	@echo "... the-cplusplus-pl/class-lifecycle/constructor.o"
+	@echo "... the-cplusplus-pl/class-lifecycle/constructor.i"
+	@echo "... the-cplusplus-pl/class-lifecycle/constructor.s"
+	@echo "... the-cplusplus-pl/concrete-classes/static-class-member.o"
+	@echo "... the-cplusplus-pl/concrete-classes/static-class-member.i"
+	@echo "... the-cplusplus-pl/concrete-classes/static-class-member.s"
+	@echo "... the-cplusplus-pl/statements/for-statements.o"
+	@echo "... the-cplusplus-pl/statements/for-statements.i"
+	@echo "... the-cplusplus-pl/statements/for-statements.s"
+	@echo "... the-cplusplus-pl/statements/if-declaration.o"
+	@echo "... the-cplusplus-pl/statements/if-declaration.i"
+	@echo "... the-cplusplus-pl/statements/if-declaration.s"
 .PHONY : help
 
 

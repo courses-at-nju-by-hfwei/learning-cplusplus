@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hengxin/github-projects/learning-cplusplus/nju-programming-tutorial/josephus-tutorial.cpp
+iostream
+-
+forward_list
+-
+numeric
+-
+

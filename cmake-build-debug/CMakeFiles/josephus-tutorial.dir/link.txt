@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++1y -Wall -g   CMakeFiles/josephus-tutorial.dir/nju-programming-tutorial/josephus-tutorial.cpp.o  -o josephus-tutorial 

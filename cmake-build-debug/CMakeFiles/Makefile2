@@ -45,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.6/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.3870.21/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.6/bin/cmake/bin/cmake -E remove -f
+RM = /home/hengxin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.3870.21/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /home/hengxin/github-projects/learning-cplusplus
 CMAKE_BINARY_DIR = /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/josephus.dir
+
+# All Build rule for target.
+CMakeFiles/josephus.dir/all:
+	$(MAKE) -f CMakeFiles/josephus.dir/build.make CMakeFiles/josephus.dir/depend
+	$(MAKE) -f CMakeFiles/josephus.dir/build.make CMakeFiles/josephus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target josephus"
+.PHONY : CMakeFiles/josephus.dir/all
+
+# Include target in all.
+all: CMakeFiles/josephus.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/josephus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/josephus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/josephus.dir/rule
+
+# Convenience name for target.
+josephus: CMakeFiles/josephus.dir/rule
+
+.PHONY : josephus
+
+# clean rule for target.
+CMakeFiles/josephus.dir/clean:
+	$(MAKE) -f CMakeFiles/josephus.dir/build.make CMakeFiles/josephus.dir/clean
+.PHONY : CMakeFiles/josephus.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/josephus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/matching-0543.dir
 
 # All Build rule for target.
 CMakeFiles/matching-0543.dir/all:
 	$(MAKE) -f CMakeFiles/matching-0543.dir/build.make CMakeFiles/matching-0543.dir/depend
 	$(MAKE) -f CMakeFiles/matching-0543.dir/build.make CMakeFiles/matching-0543.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target matching-0543"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target matching-0543"
 .PHONY : CMakeFiles/matching-0543.dir/all
 
 # Include target in all.
@@ -103,7 +140,7 @@ clean: CMakeFiles/matching-0543.dir/clean
 CMakeFiles/brackets-matching.dir/all:
 	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/depend
 	$(MAKE) -f CMakeFiles/brackets-matching.dir/build.make CMakeFiles/brackets-matching.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target brackets-matching"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target brackets-matching"
 .PHONY : CMakeFiles/brackets-matching.dir/all
 
 # Include target in all.
@@ -134,13 +171,161 @@ clean: CMakeFiles/brackets-matching.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/static-class-member.dir
+
+# All Build rule for target.
+CMakeFiles/static-class-member.dir/all:
+	$(MAKE) -f CMakeFiles/static-class-member.dir/build.make CMakeFiles/static-class-member.dir/depend
+	$(MAKE) -f CMakeFiles/static-class-member.dir/build.make CMakeFiles/static-class-member.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target static-class-member"
+.PHONY : CMakeFiles/static-class-member.dir/all
+
+# Include target in all.
+all: CMakeFiles/static-class-member.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/static-class-member.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/static-class-member.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/static-class-member.dir/rule
+
+# Convenience name for target.
+static-class-member: CMakeFiles/static-class-member.dir/rule
+
+.PHONY : static-class-member
+
+# clean rule for target.
+CMakeFiles/static-class-member.dir/clean:
+	$(MAKE) -f CMakeFiles/static-class-member.dir/build.make CMakeFiles/static-class-member.dir/clean
+.PHONY : CMakeFiles/static-class-member.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/static-class-member.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/brackets-matching-tutorial.dir
+
+# All Build rule for target.
+CMakeFiles/brackets-matching-tutorial.dir/all:
+	$(MAKE) -f CMakeFiles/brackets-matching-tutorial.dir/build.make CMakeFiles/brackets-matching-tutorial.dir/depend
+	$(MAKE) -f CMakeFiles/brackets-matching-tutorial.dir/build.make CMakeFiles/brackets-matching-tutorial.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target brackets-matching-tutorial"
+.PHONY : CMakeFiles/brackets-matching-tutorial.dir/all
+
+# Include target in all.
+all: CMakeFiles/brackets-matching-tutorial.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/brackets-matching-tutorial.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/brackets-matching-tutorial.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/brackets-matching-tutorial.dir/rule
+
+# Convenience name for target.
+brackets-matching-tutorial: CMakeFiles/brackets-matching-tutorial.dir/rule
+
+.PHONY : brackets-matching-tutorial
+
+# clean rule for target.
+CMakeFiles/brackets-matching-tutorial.dir/clean:
+	$(MAKE) -f CMakeFiles/brackets-matching-tutorial.dir/build.make CMakeFiles/brackets-matching-tutorial.dir/clean
+.PHONY : CMakeFiles/brackets-matching-tutorial.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/brackets-matching-tutorial.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/josephus-tutorial.dir
+
+# All Build rule for target.
+CMakeFiles/josephus-tutorial.dir/all:
+	$(MAKE) -f CMakeFiles/josephus-tutorial.dir/build.make CMakeFiles/josephus-tutorial.dir/depend
+	$(MAKE) -f CMakeFiles/josephus-tutorial.dir/build.make CMakeFiles/josephus-tutorial.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target josephus-tutorial"
+.PHONY : CMakeFiles/josephus-tutorial.dir/all
+
+# Include target in all.
+all: CMakeFiles/josephus-tutorial.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/josephus-tutorial.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/josephus-tutorial.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/josephus-tutorial.dir/rule
+
+# Convenience name for target.
+josephus-tutorial: CMakeFiles/josephus-tutorial.dir/rule
+
+.PHONY : josephus-tutorial
+
+# clean rule for target.
+CMakeFiles/josephus-tutorial.dir/clean:
+	$(MAKE) -f CMakeFiles/josephus-tutorial.dir/build.make CMakeFiles/josephus-tutorial.dir/clean
+.PHONY : CMakeFiles/josephus-tutorial.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/josephus-tutorial.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bm-171180589.dir
+
+# All Build rule for target.
+CMakeFiles/bm-171180589.dir/all:
+	$(MAKE) -f CMakeFiles/bm-171180589.dir/build.make CMakeFiles/bm-171180589.dir/depend
+	$(MAKE) -f CMakeFiles/bm-171180589.dir/build.make CMakeFiles/bm-171180589.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target bm-171180589"
+.PHONY : CMakeFiles/bm-171180589.dir/all
+
+# Include target in all.
+all: CMakeFiles/bm-171180589.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bm-171180589.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-171180589.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bm-171180589.dir/rule
+
+# Convenience name for target.
+bm-171180589: CMakeFiles/bm-171180589.dir/rule
+
+.PHONY : bm-171180589
+
+# clean rule for target.
+CMakeFiles/bm-171180589.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-171180589.dir/build.make CMakeFiles/bm-171180589.dir/clean
+.PHONY : CMakeFiles/bm-171180589.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-171180589.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/linkedlist.dir
 
 # All Build rule for target.
 CMakeFiles/linkedlist.dir/all:
 	$(MAKE) -f CMakeFiles/linkedlist.dir/build.make CMakeFiles/linkedlist.dir/depend
 	$(MAKE) -f CMakeFiles/linkedlist.dir/build.make CMakeFiles/linkedlist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target linkedlist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target linkedlist"
 .PHONY : CMakeFiles/linkedlist.dir/all
 
 # Include target in all.
@@ -171,113 +356,150 @@ clean: CMakeFiles/linkedlist.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/key-presses.dir
+# Target rules for target CMakeFiles/constructor.dir
 
 # All Build rule for target.
-CMakeFiles/key-presses.dir/all:
-	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/depend
-	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target key-presses"
-.PHONY : CMakeFiles/key-presses.dir/all
+CMakeFiles/constructor.dir/all:
+	$(MAKE) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/depend
+	$(MAKE) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target constructor"
+.PHONY : CMakeFiles/constructor.dir/all
 
 # Include target in all.
-all: CMakeFiles/key-presses.dir/all
+all: CMakeFiles/constructor.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/key-presses.dir/rule: cmake_check_build_system
+CMakeFiles/constructor.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/key-presses.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/constructor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/key-presses.dir/rule
+.PHONY : CMakeFiles/constructor.dir/rule
 
 # Convenience name for target.
-key-presses: CMakeFiles/key-presses.dir/rule
+constructor: CMakeFiles/constructor.dir/rule
 
-.PHONY : key-presses
-
-# clean rule for target.
-CMakeFiles/key-presses.dir/clean:
-	$(MAKE) -f CMakeFiles/key-presses.dir/build.make CMakeFiles/key-presses.dir/clean
-.PHONY : CMakeFiles/key-presses.dir/clean
+.PHONY : constructor
 
 # clean rule for target.
-clean: CMakeFiles/key-presses.dir/clean
+CMakeFiles/constructor.dir/clean:
+	$(MAKE) -f CMakeFiles/constructor.dir/build.make CMakeFiles/constructor.dir/clean
+.PHONY : CMakeFiles/constructor.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/constructor.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/event-driven.dir
+# Target rules for target CMakeFiles/bm-171860599.dir
 
 # All Build rule for target.
-CMakeFiles/event-driven.dir/all:
-	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/depend
-	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target event-driven"
-.PHONY : CMakeFiles/event-driven.dir/all
+CMakeFiles/bm-171860599.dir/all:
+	$(MAKE) -f CMakeFiles/bm-171860599.dir/build.make CMakeFiles/bm-171860599.dir/depend
+	$(MAKE) -f CMakeFiles/bm-171860599.dir/build.make CMakeFiles/bm-171860599.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target bm-171860599"
+.PHONY : CMakeFiles/bm-171860599.dir/all
 
 # Include target in all.
-all: CMakeFiles/event-driven.dir/all
+all: CMakeFiles/bm-171860599.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/event-driven.dir/rule: cmake_check_build_system
+CMakeFiles/bm-171860599.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/event-driven.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-171860599.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/event-driven.dir/rule
+.PHONY : CMakeFiles/bm-171860599.dir/rule
 
 # Convenience name for target.
-event-driven: CMakeFiles/event-driven.dir/rule
+bm-171860599: CMakeFiles/bm-171860599.dir/rule
 
-.PHONY : event-driven
-
-# clean rule for target.
-CMakeFiles/event-driven.dir/clean:
-	$(MAKE) -f CMakeFiles/event-driven.dir/build.make CMakeFiles/event-driven.dir/clean
-.PHONY : CMakeFiles/event-driven.dir/clean
+.PHONY : bm-171860599
 
 # clean rule for target.
-clean: CMakeFiles/event-driven.dir/clean
+CMakeFiles/bm-171860599.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-171860599.dir/build.make CMakeFiles/bm-171860599.dir/clean
+.PHONY : CMakeFiles/bm-171860599.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-171860599.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/image-screen.dir
+# Target rules for target CMakeFiles/for-statements.dir
 
 # All Build rule for target.
-CMakeFiles/image-screen.dir/all:
-	$(MAKE) -f CMakeFiles/image-screen.dir/build.make CMakeFiles/image-screen.dir/depend
-	$(MAKE) -f CMakeFiles/image-screen.dir/build.make CMakeFiles/image-screen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target image-screen"
-.PHONY : CMakeFiles/image-screen.dir/all
+CMakeFiles/for-statements.dir/all:
+	$(MAKE) -f CMakeFiles/for-statements.dir/build.make CMakeFiles/for-statements.dir/depend
+	$(MAKE) -f CMakeFiles/for-statements.dir/build.make CMakeFiles/for-statements.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target for-statements"
+.PHONY : CMakeFiles/for-statements.dir/all
 
 # Include target in all.
-all: CMakeFiles/image-screen.dir/all
+all: CMakeFiles/for-statements.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/image-screen.dir/rule: cmake_check_build_system
+CMakeFiles/for-statements.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/image-screen.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/for-statements.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/image-screen.dir/rule
+.PHONY : CMakeFiles/for-statements.dir/rule
 
 # Convenience name for target.
-image-screen: CMakeFiles/image-screen.dir/rule
+for-statements: CMakeFiles/for-statements.dir/rule
 
-.PHONY : image-screen
-
-# clean rule for target.
-CMakeFiles/image-screen.dir/clean:
-	$(MAKE) -f CMakeFiles/image-screen.dir/build.make CMakeFiles/image-screen.dir/clean
-.PHONY : CMakeFiles/image-screen.dir/clean
+.PHONY : for-statements
 
 # clean rule for target.
-clean: CMakeFiles/image-screen.dir/clean
+CMakeFiles/for-statements.dir/clean:
+	$(MAKE) -f CMakeFiles/for-statements.dir/build.make CMakeFiles/for-statements.dir/clean
+.PHONY : CMakeFiles/for-statements.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/for-statements.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bm-171250630.dir
+
+# All Build rule for target.
+CMakeFiles/bm-171250630.dir/all:
+	$(MAKE) -f CMakeFiles/bm-171250630.dir/build.make CMakeFiles/bm-171250630.dir/depend
+	$(MAKE) -f CMakeFiles/bm-171250630.dir/build.make CMakeFiles/bm-171250630.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target bm-171250630"
+.PHONY : CMakeFiles/bm-171250630.dir/all
+
+# Include target in all.
+all: CMakeFiles/bm-171250630.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bm-171250630.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-171250630.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bm-171250630.dir/rule
+
+# Convenience name for target.
+bm-171250630: CMakeFiles/bm-171250630.dir/rule
+
+.PHONY : bm-171250630
+
+# clean rule for target.
+CMakeFiles/bm-171250630.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-171250630.dir/build.make CMakeFiles/bm-171250630.dir/clean
+.PHONY : CMakeFiles/bm-171250630.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-171250630.dir/clean
 
 .PHONY : clean
 
@@ -288,7 +510,7 @@ clean: CMakeFiles/image-screen.dir/clean
 CMakeFiles/dynamic-array.dir/all:
 	$(MAKE) -f CMakeFiles/dynamic-array.dir/build.make CMakeFiles/dynamic-array.dir/depend
 	$(MAKE) -f CMakeFiles/dynamic-array.dir/build.make CMakeFiles/dynamic-array.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target dynamic-array"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target dynamic-array"
 .PHONY : CMakeFiles/dynamic-array.dir/all
 
 # Include target in all.
@@ -319,39 +541,335 @@ clean: CMakeFiles/dynamic-array.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/hello-sdl.dir
+# Target rules for target CMakeFiles/if-declaration.dir
 
 # All Build rule for target.
-CMakeFiles/hello-sdl.dir/all:
-	$(MAKE) -f CMakeFiles/hello-sdl.dir/build.make CMakeFiles/hello-sdl.dir/depend
-	$(MAKE) -f CMakeFiles/hello-sdl.dir/build.make CMakeFiles/hello-sdl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target hello-sdl"
-.PHONY : CMakeFiles/hello-sdl.dir/all
+CMakeFiles/if-declaration.dir/all:
+	$(MAKE) -f CMakeFiles/if-declaration.dir/build.make CMakeFiles/if-declaration.dir/depend
+	$(MAKE) -f CMakeFiles/if-declaration.dir/build.make CMakeFiles/if-declaration.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target if-declaration"
+.PHONY : CMakeFiles/if-declaration.dir/all
 
 # Include target in all.
-all: CMakeFiles/hello-sdl.dir/all
+all: CMakeFiles/if-declaration.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/hello-sdl.dir/rule: cmake_check_build_system
+CMakeFiles/if-declaration.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hello-sdl.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/if-declaration.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/hello-sdl.dir/rule
+.PHONY : CMakeFiles/if-declaration.dir/rule
 
 # Convenience name for target.
-hello-sdl: CMakeFiles/hello-sdl.dir/rule
+if-declaration: CMakeFiles/if-declaration.dir/rule
 
-.PHONY : hello-sdl
-
-# clean rule for target.
-CMakeFiles/hello-sdl.dir/clean:
-	$(MAKE) -f CMakeFiles/hello-sdl.dir/build.make CMakeFiles/hello-sdl.dir/clean
-.PHONY : CMakeFiles/hello-sdl.dir/clean
+.PHONY : if-declaration
 
 # clean rule for target.
-clean: CMakeFiles/hello-sdl.dir/clean
+CMakeFiles/if-declaration.dir/clean:
+	$(MAKE) -f CMakeFiles/if-declaration.dir/build.make CMakeFiles/if-declaration.dir/clean
+.PHONY : CMakeFiles/if-declaration.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/if-declaration.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bm-171240542.dir
+
+# All Build rule for target.
+CMakeFiles/bm-171240542.dir/all:
+	$(MAKE) -f CMakeFiles/bm-171240542.dir/build.make CMakeFiles/bm-171240542.dir/depend
+	$(MAKE) -f CMakeFiles/bm-171240542.dir/build.make CMakeFiles/bm-171240542.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target bm-171240542"
+.PHONY : CMakeFiles/bm-171240542.dir/all
+
+# Include target in all.
+all: CMakeFiles/bm-171240542.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bm-171240542.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-171240542.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bm-171240542.dir/rule
+
+# Convenience name for target.
+bm-171240542: CMakeFiles/bm-171240542.dir/rule
+
+.PHONY : bm-171240542
+
+# clean rule for target.
+CMakeFiles/bm-171240542.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-171240542.dir/build.make CMakeFiles/bm-171240542.dir/clean
+.PHONY : CMakeFiles/bm-171240542.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-171240542.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bm-171240011.dir
+
+# All Build rule for target.
+CMakeFiles/bm-171240011.dir/all:
+	$(MAKE) -f CMakeFiles/bm-171240011.dir/build.make CMakeFiles/bm-171240011.dir/depend
+	$(MAKE) -f CMakeFiles/bm-171240011.dir/build.make CMakeFiles/bm-171240011.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target bm-171240011"
+.PHONY : CMakeFiles/bm-171240011.dir/all
+
+# Include target in all.
+all: CMakeFiles/bm-171240011.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bm-171240011.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-171240011.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bm-171240011.dir/rule
+
+# Convenience name for target.
+bm-171240011: CMakeFiles/bm-171240011.dir/rule
+
+.PHONY : bm-171240011
+
+# clean rule for target.
+CMakeFiles/bm-171240011.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-171240011.dir/build.make CMakeFiles/bm-171240011.dir/clean
+.PHONY : CMakeFiles/bm-171240011.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-171240011.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bm-171860575.dir
+
+# All Build rule for target.
+CMakeFiles/bm-171860575.dir/all:
+	$(MAKE) -f CMakeFiles/bm-171860575.dir/build.make CMakeFiles/bm-171860575.dir/depend
+	$(MAKE) -f CMakeFiles/bm-171860575.dir/build.make CMakeFiles/bm-171860575.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target bm-171860575"
+.PHONY : CMakeFiles/bm-171860575.dir/all
+
+# Include target in all.
+all: CMakeFiles/bm-171860575.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bm-171860575.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-171860575.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bm-171860575.dir/rule
+
+# Convenience name for target.
+bm-171860575: CMakeFiles/bm-171860575.dir/rule
+
+.PHONY : bm-171860575
+
+# clean rule for target.
+CMakeFiles/bm-171860575.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-171860575.dir/build.make CMakeFiles/bm-171860575.dir/clean
+.PHONY : CMakeFiles/bm-171860575.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-171860575.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bm-171860639.dir
+
+# All Build rule for target.
+CMakeFiles/bm-171860639.dir/all:
+	$(MAKE) -f CMakeFiles/bm-171860639.dir/build.make CMakeFiles/bm-171860639.dir/depend
+	$(MAKE) -f CMakeFiles/bm-171860639.dir/build.make CMakeFiles/bm-171860639.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target bm-171860639"
+.PHONY : CMakeFiles/bm-171860639.dir/all
+
+# Include target in all.
+all: CMakeFiles/bm-171860639.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bm-171860639.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-171860639.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bm-171860639.dir/rule
+
+# Convenience name for target.
+bm-171860639: CMakeFiles/bm-171860639.dir/rule
+
+.PHONY : bm-171860639
+
+# clean rule for target.
+CMakeFiles/bm-171860639.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-171860639.dir/build.make CMakeFiles/bm-171860639.dir/clean
+.PHONY : CMakeFiles/bm-171860639.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-171860639.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bm-171240536.dir
+
+# All Build rule for target.
+CMakeFiles/bm-171240536.dir/all:
+	$(MAKE) -f CMakeFiles/bm-171240536.dir/build.make CMakeFiles/bm-171240536.dir/depend
+	$(MAKE) -f CMakeFiles/bm-171240536.dir/build.make CMakeFiles/bm-171240536.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target bm-171240536"
+.PHONY : CMakeFiles/bm-171240536.dir/all
+
+# Include target in all.
+all: CMakeFiles/bm-171240536.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bm-171240536.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-171240536.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bm-171240536.dir/rule
+
+# Convenience name for target.
+bm-171240536: CMakeFiles/bm-171240536.dir/rule
+
+.PHONY : bm-171240536
+
+# clean rule for target.
+CMakeFiles/bm-171240536.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-171240536.dir/build.make CMakeFiles/bm-171240536.dir/clean
+.PHONY : CMakeFiles/bm-171240536.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-171240536.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bm-171240513.dir
+
+# All Build rule for target.
+CMakeFiles/bm-171240513.dir/all:
+	$(MAKE) -f CMakeFiles/bm-171240513.dir/build.make CMakeFiles/bm-171240513.dir/depend
+	$(MAKE) -f CMakeFiles/bm-171240513.dir/build.make CMakeFiles/bm-171240513.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target bm-171240513"
+.PHONY : CMakeFiles/bm-171240513.dir/all
+
+# Include target in all.
+all: CMakeFiles/bm-171240513.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bm-171240513.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-171240513.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bm-171240513.dir/rule
+
+# Convenience name for target.
+bm-171240513: CMakeFiles/bm-171240513.dir/rule
+
+.PHONY : bm-171240513
+
+# clean rule for target.
+CMakeFiles/bm-171240513.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-171240513.dir/build.make CMakeFiles/bm-171240513.dir/clean
+.PHONY : CMakeFiles/bm-171240513.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-171240513.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bm-171240543.dir
+
+# All Build rule for target.
+CMakeFiles/bm-171240543.dir/all:
+	$(MAKE) -f CMakeFiles/bm-171240543.dir/build.make CMakeFiles/bm-171240543.dir/depend
+	$(MAKE) -f CMakeFiles/bm-171240543.dir/build.make CMakeFiles/bm-171240543.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target bm-171240543"
+.PHONY : CMakeFiles/bm-171240543.dir/all
+
+# Include target in all.
+all: CMakeFiles/bm-171240543.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bm-171240543.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-171240543.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bm-171240543.dir/rule
+
+# Convenience name for target.
+bm-171240543: CMakeFiles/bm-171240543.dir/rule
+
+.PHONY : bm-171240543
+
+# clean rule for target.
+CMakeFiles/bm-171240543.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-171240543.dir/build.make CMakeFiles/bm-171240543.dir/clean
+.PHONY : CMakeFiles/bm-171240543.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-171240543.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bm-161180204.dir
+
+# All Build rule for target.
+CMakeFiles/bm-161180204.dir/all:
+	$(MAKE) -f CMakeFiles/bm-161180204.dir/build.make CMakeFiles/bm-161180204.dir/depend
+	$(MAKE) -f CMakeFiles/bm-161180204.dir/build.make CMakeFiles/bm-161180204.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target bm-161180204"
+.PHONY : CMakeFiles/bm-161180204.dir/all
+
+# Include target in all.
+all: CMakeFiles/bm-161180204.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bm-161180204.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bm-161180204.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hengxin/github-projects/learning-cplusplus/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/bm-161180204.dir/rule
+
+# Convenience name for target.
+bm-161180204: CMakeFiles/bm-161180204.dir/rule
+
+.PHONY : bm-161180204
+
+# clean rule for target.
+CMakeFiles/bm-161180204.dir/clean:
+	$(MAKE) -f CMakeFiles/bm-161180204.dir/build.make CMakeFiles/bm-161180204.dir/clean
+.PHONY : CMakeFiles/bm-161180204.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bm-161180204.dir/clean
 
 .PHONY : clean
 

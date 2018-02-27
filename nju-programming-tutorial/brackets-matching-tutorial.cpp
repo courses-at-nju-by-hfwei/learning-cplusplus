@@ -73,22 +73,6 @@ int main() {
  *  false, otherwise.
  */
 bool is_matched(std::string brackets) {
-    std::stack<char> bracket_stack;
-
-    for (std::string::iterator bit = brackets.begin();
-         bit < brackets.end(); ++bit) {
-        if (*bit == '(' || *bit == '[' || *bit == '{') {  // left brackets
-            bracket_stack.push(*bit);
-        } else { // right brackets: ')', ']', '}'
-            if (bracket_stack.empty())
-                return false;
-            if (bracket_stack.top() != get_left_bracket(*bit))
-                return false;
-            bracket_stack.pop();
-        }
-    }
-
-    return bracket_stack.empty();
 }
 
 /**

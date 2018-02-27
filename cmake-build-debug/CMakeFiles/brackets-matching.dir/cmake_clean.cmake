@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching.cpp.o"
+  "CMakeFiles/brackets-matching.dir/nju-oj/exams/brackets-matching/problem/brackets-matching.cpp.o"
   "brackets-matching.pdb"
   "brackets-matching"
 )

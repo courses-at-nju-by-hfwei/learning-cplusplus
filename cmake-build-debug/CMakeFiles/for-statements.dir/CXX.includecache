@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hengxin/github-projects/learning-cplusplus/the-cplusplus-pl/statements/for-statements.cpp
+iostream
+-
+string
+-
+vector
+-
+

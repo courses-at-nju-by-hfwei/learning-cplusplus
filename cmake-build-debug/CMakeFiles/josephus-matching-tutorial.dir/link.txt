@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++1y -Wall -g   CMakeFiles/josephus-matching-tutorial.dir/nju-programming-tutorial/brackets-matching-tutorial.cpp.o  -o josephus-matching-tutorial 

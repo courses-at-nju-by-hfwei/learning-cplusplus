@@ -1,1 +1,1 @@
-/usr/bin/c++   -std=c++1y -Wall -g   CMakeFiles/key-presses.dir/cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.o  -o key-presses -L/usr/lib/x86_64-linux-gnu  -lSDL2 
+/usr/bin/c++   -std=c++1y -Wall -g   CMakeFiles/key-presses.dir/cplusplus-sdl/lazy-foo-tutorial/04-key-presses.cpp.o  -o key-presses 

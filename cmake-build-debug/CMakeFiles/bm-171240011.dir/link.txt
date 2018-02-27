@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/bm-171240011.dir/nju-oj/exams/brackets-matching/from-students/bm-171240011.c.o  -o bm-171240011 
